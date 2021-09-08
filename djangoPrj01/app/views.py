@@ -31,6 +31,7 @@ class SearchView(APIView):
 
         docs = es.search(index='parkmoa',
                          body={
+                         "size": 1000,
                              "query": {
                                  "multi_match": {
                                      "query": search_word,

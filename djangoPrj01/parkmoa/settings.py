@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-@go0(-0f1bjv__875v%#o6uj==cu-v-izaa724bdgo&)^cxr3+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', '192.168.200.178', 'parkmoa.azurewebsites.net', 'djangoPrj01.azurewebsites.net']
-
+#ALLOWED_HOSTS = ['localhost', '192.168.200.178', 'parkmoa.azurewebsites.net', 'djangoPrj01.azurewebsites.net', '*']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -61,6 +61,7 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:8080',  # vue의 포트 번호
     'http://172.30.1.25:8080',
+    'http://192.168.219.103:8080',
 )
 
 CORS_ALLOW_METHODS = (
